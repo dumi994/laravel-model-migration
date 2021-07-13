@@ -15,6 +15,10 @@ class CreateViaggiTable extends Migration
     {
         Schema::create('viaggi', function (Blueprint $table) {
             $table->id();
+            $table->string('destinazione', 100);
+            $table->text('luoghi_da_visitare')->nullable();
+            $table->string('durata')->nullable();
+            $table->int('prezzo', 6,2);
             $table->timestamps();
         });
     }
