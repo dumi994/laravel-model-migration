@@ -13,7 +13,7 @@ class UpdateViaggiTable extends Migration
      */
     public function up()
     {
-        Schema::table('Viaggi', function (Blueprint $table) {
+        Schema::table('viaggi', function (Blueprint $table) {
             //
         });
     }
@@ -25,7 +25,7 @@ class UpdateViaggiTable extends Migration
      */
     public function down()
     {
-        Schema::table('Viaggi', function (Blueprint $table) {
+        Schema::table('viaggi', function (Blueprint $table) {
             //
         });
     }

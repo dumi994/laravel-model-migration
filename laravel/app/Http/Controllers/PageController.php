@@ -3,16 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Viaggi;
 
 class PageController extends Controller
 {
     public function index(){
-        return view('home');
+        $viaggi = Viaggio::all();
+        return view('home', compact('viaggi'));
     }
+
     public function about(){
         return view('about');
     }
     public function contacts(){
         return view('contacts');
     }
+
 }

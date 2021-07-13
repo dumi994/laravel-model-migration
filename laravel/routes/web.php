@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ViaggioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +13,6 @@ use App\Http\Controllers\ViaggioController;
 |
 */
 
-/* page controller */
-Route::get('/', 'ViaggioController@index' )->name('home');;
-Route::get('about', 'ViaggioController@about' )->name('about');;
-Route::get('contacts', 'ViaggioController@contacts' )->name('contacts');;
-
+Route::get('/', 'PageController@index')->name('index');
+Route::get('about', 'PageController@about')->name('about');
+Route::get('contacts', 'PageController@contacts')->name('contacts');
